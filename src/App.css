@@ -79,8 +79,8 @@
 
 #view-box {
   position: fixed;
-  height: 65vh;
-  width: 80vw;
+  height: calc(68vh - 70px);
+  width: 100vw;
   border-radius: 10px 10px 0 0;
   border: solid rgba(134, 134, 134, 0.552) 1px;
   border-bottom: none;
@@ -88,7 +88,8 @@
   display: flex;
   flex-direction: column;
   overflow: auto;
-  -webkit-box-shadow: -1px 1px 11px 4px rgba(0,0,0,0.26); 
+  padding: 0 20px 50px 20px;
+  -webkit-bo-shadow: -1px 1px 11px 4px rgba(0,0,0,0.26); 
   box-shadow: -1px 1px 11px 4px rgba(0,0,0,0.26);
 
 
@@ -108,7 +109,7 @@
 }
 
 .view-box-header {
-  width: 100%;
+  /* width: 100%; */
   text-align: center;
   color: var(--primary-color);
   font-size: 2em;
@@ -123,10 +124,10 @@
   font-size: 1.2em;
 }
 
-.view-box-close-button {
-  padding: .5em;
-  font-weight: 500;
-  float: right;
+.view-box-control-bar {
+  width: 100%;
+  text-align: center;
+  padding-top: 10px;
 }
 
 

@@ -1,5 +1,7 @@
 // import logo from './logo.svg';
 import React, {useState} from 'react';
+
+import { FaChevronCircleDown } from 'react-icons/fa';
 import './App.css';
 const logo = require('./images/Assemblage Logo 3.png')
 
@@ -7,13 +9,13 @@ function App() {
   const [ view , setView ] = useState({});
   const menuOptions = [
     {
-      title: 'Who We Are',
+      title: 'Our Team',
       description: 'Founded in 2022, we are a small research and application development shop located in the Rogers Park neighborhood of Chicago.',
       content: []
     },
     {
-      title: 'What We Do',
-      description: 'Built on the experience, expertise, and problem-solving skills of our founder, we provide services in geospatial anaylsis and visualization, planning research, and full stack application development including: the design, creation, and deployment of custom-built interactive web apps, database development and maintenance, and bug fixes and upgrades to existing applications.',
+      title: 'Our Work',
+      description: 'We provide services in geospatial anaylsis and visualization, planning research, and full stack application development including: the design, creation, and deployment of custom-built interactive web apps, database development and maintenance, and bug fixes and upgrades to existing applications.',
       content: []
     },    {
       title: 'Connect With Us',
@@ -25,7 +27,10 @@ function App() {
   
   return (
     <div className="App">
-      <div id="header">
+      <div 
+        id="header"             
+        onClick={() => setView({})}
+      >
         <img src={logo} className="App-logo" alt="logo" />
       </div>
       <div id='bio'>
@@ -53,12 +58,12 @@ function App() {
         }
       </div>
       <div id='view-box' className={ view.title ? 'view-box-open' : 'view-box-close'}>
-        <div 
-        >
-          <span
-            className='view-box-close-button'
+        <div className='view-box-control-bar'>
+          <FaChevronCircleDown
+            size='2em'
+            // className='view-box-close-button'
             onClick={() => setView({})}
-          >X</span>
+          />
         </div>
         <div
           className='view-box-header'
