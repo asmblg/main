@@ -90,7 +90,7 @@
   overflow: auto;
   padding: 0 20px 50px 20px;
   -webkit-bo-shadow: -1px 1px 11px 4px rgba(0,0,0,0.26); 
-  box-shadow: -1px 1px 11px 4px rgba(0,0,0,0.26);
+  box-shadow: inset -1px 1px 11px 4px rgba(0,0,0,0.26);
 
 
   /* animation: view-box-open 2s; */
@@ -127,7 +127,8 @@
 .view-box-control-bar {
   width: 100%;
   text-align: center;
-  padding-top: 10px;
+  padding-top: 20px;
+  /* margin-top: 20px; */
 }
 
 
