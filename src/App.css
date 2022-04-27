@@ -46,7 +46,10 @@
   margin: 5vh auto;
   max-width: 600px;
   min-width: 400px;
-  font-size: 1em;
+  font-size: 1.2em;
+  text-align: justify;
+  word-break: normal;
+  font-weight: 200;
 }
 
 #menu {
@@ -72,6 +75,77 @@
 
 .App-link {
   color: var(--accent-color);
+}
+
+#view-box {
+  position: fixed;
+  height: 65vh;
+  width: 80vw;
+  border-radius: 10px 10px 0 0;
+  border: solid rgba(134, 134, 134, 0.552) 1px;
+  border-bottom: none;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  -webkit-box-shadow: -1px 1px 11px 4px rgba(0,0,0,0.26); 
+  box-shadow: -1px 1px 11px 4px rgba(0,0,0,0.26);
+
+
+  /* animation: view-box-open 2s; */
+  /* bottom: 0; */
+  
+}
+
+.view-box-open {
+  animation: view-box-open 2s;
+  bottom: 0;
+}
+
+.view-box-close {
+  animation: view-box-close 2s;
+  bottom: -70vh;
+}
+
+.view-box-header {
+  width: 100%;
+  text-align: center;
+  color: var(--primary-color);
+  font-size: 2em;
+  font-weight: 700;
+  margin-top: 20px;
+}
+
+.view-box-description {
+  max-width: 600px;
+  margin: 1.5em auto;
+  font-weight: 200;
+  font-size: 1.2em;
+}
+
+.view-box-close-button {
+  padding: .5em;
+  font-weight: 500;
+  float: right;
+}
+
+
+@keyframes view-box-open {
+  from {
+    bottom: -70vh;
+  }
+  to {
+    bottom: 0
+  }
+}
+
+@keyframes view-box-close {
+  from {
+    bottom: 0;
+  }
+  to {
+    bottom: -70vh;
+  }
 }
 
 /* @keyframes App-logo-spin {
