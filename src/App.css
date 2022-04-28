@@ -198,6 +198,7 @@
 
 .view-box-work-card {
   width: 80vw;
+  max-width: 800px;
   height: fit-content;
   /* height: 260px; */
   display: flex;
@@ -219,7 +220,6 @@
   height: 100%;
 }
 .view-box-work-card-image {
-  width: 500px;
   /* border: solid black 1px; */
   /* padding: 5px; */
 
@@ -234,7 +234,9 @@
 }
 
 .view-box-work-card-image img {
-  width: 100%;
+  /* width: 100%; */
+  width: 400px;
+
   -webkit-bo-shadow: -1px 1px 11px 4px rgba(0,0,0,0.26); 
   box-shadow: -1px 1px 11px 4px rgba(0,0,0,0.26);
 
