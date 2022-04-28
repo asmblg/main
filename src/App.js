@@ -1,37 +1,49 @@
 // import logo from './logo.svg';
 import React, {useState} from 'react';
-
+import OurTeam from './components/OurTeam';
+import OurWork from './components/OurWork';
+import Connect from './components/Connect';
+import cardContent from './config/cardContent';
 import { FaChevronCircleDown } from 'react-icons/fa';
+// import content from './content';
+
 import './App.css';
 const logo = require('./images/Assemblage Logo 3.png')
 
 function App() {
-  const [ view , setView ] = useState({});
-  const menuOptions = [
-    {
-      title: 'Our Team',
-      description: 'Founded in 2022, we are a small research and application development shop located in the Rogers Park neighborhood of Chicago.',
-      content: []
-    },
-    {
-      title: 'Our Work',
-      description: 'We provide services in geospatial anaylsis and visualization, planning research, and full stack application development including: the design, creation, and deployment of custom-built interactive web apps, database development and maintenance, and bug fixes and upgrades to existing applications.',
-      content: []
-    },    {
-      title: 'Connect With Us',
-      description: '',
-      content: []
-
-    }
+  const [ view , setView ] = useState({
+    selection: 'Our Work'
+  });
+  
+  const viewOptions = [
+    'Our Work',
+    'Our Team',
+    'Connect With Us'
   ]
+
+  const View = ({selection}) => {
+    switch (selection) {
+      case 'Our Team':
+        return <OurTeam />;
+      case 'Our Work':
+        return <OurWork cardContent={cardContent.work} />;
+      case 'Connect With Us':
+        return <Connect cardContent={cardContent.connect}/>
+      default:
+        break;
+    } 
+  }
   
   return (
     <div className="App">
       <div 
         id="header"             
-        onClick={() => setView({})}
+        onClick={() => setView({
+          ...view,
+          open: false
+        })}
       >
-        <img src={logo} className="App-logo" alt="logo" />
+        <img src={logo} id={"App-logo"} className={view.open ? 'shifted-up': 'shifted-down'} alt="logo" />
       </div>
       <div id='bio'>
         <p>
@@ -43,12 +55,12 @@ function App() {
 
       </div>
       <div id='menu'>
-        { menuOptions.map(({title, description}) => 
+        { viewOptions.map(title => 
           <div 
             className='menu-option' 
             onClick={() => setView({
-              title: title,
-              description: description
+              open: true,
+              selection: title
             })}
           >
             {title}
@@ -57,20 +69,19 @@ function App() {
 
         }
       </div>
-      <div id='view-box' className={ view.title ? 'view-box-open' : 'view-box-close'}>
+      <div id='view-box' className={ view.selection ? view.open ? 'view-box-open' : 'view-box-close' : ''}>
         <div className='view-box-control-bar'>
           <FaChevronCircleDown
             size='2em'
             // className='view-box-close-button'
-            onClick={() => setView({})}
+            onClick={() => setView({
+              ...view,
+              open: false
+            })}
           />
         </div>
-        <div
-          className='view-box-header'
-        >{view.title ? view.title.toUpperCase() : ''}</div>
-        <div className='view-box-description'>
-          {view.description}
-        </div>
+        <View selection={view.selection} />
+        {/* // {renderView(view.selection)} */}
       </div>
 
 
