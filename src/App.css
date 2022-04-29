@@ -3,6 +3,7 @@
   --secondary-color: #1EB8B2;
   --bg-color: whitesmoke;
   --accent-color: magenta;
+  --text-color: black;
 }
 
 .App {
@@ -15,8 +16,15 @@
   background-color: var(--bg-color);
   position: fixed;
   top: 0;
+  color: var(--text-color);
 
 
+}
+
+a {
+  text-decoration: none;
+  font-weight: 500;
+  color: var(--secondary-color)
 }
 
 #App-logo {
@@ -56,7 +64,7 @@
 #bio {
   margin: 5vh auto;
   max-width: 600px;
-  min-width: 400px;
+  /* min-width: 400px; */
   font-size: 1.2em;
   text-align: justify;
   word-break: normal;
@@ -133,6 +141,7 @@
   margin: 1.5em auto;
   font-weight: 200;
   font-size: 1.2em;
+  text-align: justify;
 }
 
 .view-box-control-bar {
@@ -144,11 +153,12 @@
 
 .view-box-content {
   display: flex;
-  flex-direction: row;
+
+  flex-direction: column;
   width: 90vw;
   padding: 20px 5vw 10px 5vw;
   overflow: auto;
-  justify-content: center;
+  align-items: center;
   gap: 40px;
 }
 
@@ -158,13 +168,27 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  background-color: var(--bg-color);
+  padding: 20px;
+  gap: 15px;
+  border-radius: 10px;
+  -webkit-bo-shadow: -1px 1px 11px 4px rgba(0,0,0,0.26); 
+  box-shadow: -1px 1px 11px 4px rgba(0,0,0,0.26);
+
+}
+
+.view-box-team-card {
+  width: 800px;
+  height: 340px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
   /* gap: 10px; */
   background-color: var(--bg-color);
   padding: 20px;
   border-radius: 10px;
   -webkit-bo-shadow: -1px 1px 11px 4px rgba(0,0,0,0.26); 
   box-shadow: -1px 1px 11px 4px rgba(0,0,0,0.26);
-
 }
 .view-box-content-card-header,
 .view-box-work-card-header {
@@ -178,7 +202,7 @@
 }
 .view-box-work-card-header {
   font-size: 2em;
-  margin-bottom: 1em
+  margin-bottom: .5em
 }
 
 .view-box-content-card-email,
@@ -207,6 +231,7 @@
   /* gap: 10px; */
   background-color: var(--bg-color);
   padding: 20px;
+  margin-bottom: 20px;
   border-radius: 10px;
   -webkit-bo-shadow: -1px 1px 11px 4px rgba(0,0,0,0.26); 
   box-shadow: -1px 1px 11px 4px rgba(0,0,0,0.26);
@@ -219,27 +244,49 @@
   align-items: center;
   height: 100%;
 }
-.view-box-work-card-image {
-  /* border: solid black 1px; */
-  /* padding: 5px; */
 
-  /* height: 200px; */
+.view-box-team-card-body {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  
+}
+
+.view-box-team-card-name {
+  font-size: 1.2em;
+}
+
+.view-box-team-card-role {
+  font-weight: 300;
+  font-style: italic;
 }
 
 .view-box-work-card-description {
-  width: calc(80vw - 300px);
+  /* width: calc(80vw - 300px); */
   font-weight: 200;
-  overflow: auto;
+  /* height: 200px; */
+  overflow: scroll;
   padding-left: 20px;
+  font-size: .9em;
+}
+
+
+.view-box-team-card-description {
+  font-size: .9em;
+  font-weight: 200;
+  margin-top: 20px;
 }
 
 .view-box-work-card-image img {
-  /* width: 100%; */
-  width: 400px;
-
+  width: 300px;
   -webkit-bo-shadow: -1px 1px 11px 4px rgba(0,0,0,0.26); 
   box-shadow: -1px 1px 11px 4px rgba(0,0,0,0.26);
 
+}
+
+.view-box-team-card-image img {
+  width: 250px;
+  border-radius: 50%;
 }
 
 .view-box-work-card-image img:hover {
@@ -249,7 +296,53 @@
 
 
 
+@media only screen and (max-width: 500px ) {
+  .view-box-team-card,
+  .view-box-work-card {
+    width: 80vw;
+    height: fit-content;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  
 
+  .view-box-work-card-body {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .view-box-description {
+    width: 80vw;
+    font-size: .9em;
+  }
+
+  #App-logo,
+  #bio p {
+    width: 80vw;
+    margin: auto
+  }
+  
+  #bio p {
+    font-size: .8em;
+    margin-top: 20px;
+  }
+
+  .shifted-up {
+    animation: shift-up-mobile 2s;
+    bottom: 10vh;
+  }
+  
+  .shifted-down {
+    animation: shift-down-mobile 2s;
+    bottom: 0
+  }
+
+
+  /* #bio {
+    width: 300px;
+  } */
+}
 
 @keyframes view-box-open {
   from {
@@ -287,11 +380,20 @@
   }
 }
 
-/* @keyframes App-logo-spin {
+@keyframes shift-up-mobile {
   from {
-    transform: rotate(0deg);
+    bottom: 0;
   }
   to {
-    transform: rotate(360deg);
+    bottom: 10vh;
   }
-} */
+}
+
+@keyframes shift-down-mobile {
+  from {
+    bottom: 10vh;
+  }
+  to {
+    bottom: 0;
+  }
+}

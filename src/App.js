@@ -8,7 +8,8 @@ import { FaChevronCircleDown } from 'react-icons/fa';
 // import content from './content';
 
 import './App.css';
-const logo = require('./images/Assemblage Logo 3.png')
+const logo = require('./images/Assemblage Logo 3.png');
+// const darkLogo = require('./images/Assemblage Logo Dark Mode.png');
 
 function App() {
   const [ view , setView ] = useState({
@@ -24,7 +25,7 @@ function App() {
   const View = ({selection}) => {
     switch (selection) {
       case 'Our Team':
-        return <OurTeam />;
+        return <OurTeam cardContent={cardContent.team}/>;
       case 'Our Work':
         return <OurWork cardContent={cardContent.work} />;
       case 'Connect With Us':
