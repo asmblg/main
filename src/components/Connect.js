@@ -18,7 +18,7 @@ export default ({cardContent}) =>
                 {text}
               </div>  
               <div className='view-box-content-card-email'>
-                <a href={`mailto:${email}`}>{email}</a>.
+                <a href={`mailto:${email}`}>{email}</a>
               </div>
           
           </div>
