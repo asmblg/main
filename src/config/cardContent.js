@@ -1,7 +1,10 @@
 /* eslint-disable import/no-anonymous-default-export */
 const workExampleOneImage = require( '../images/datanexus.png');
 const workExampleTwoImage = require('../images/evictiontracker.png');
+const workExampleThreeImage = require('../images/mahs-dataexplorer.png');
+
 const teamMemberOneImage = require('../images/erikprofile.jpg');
+
 
 const links = [
   'https://atlantaregional.org/',
@@ -41,6 +44,12 @@ export default {
       Description: () => <>Also a product of our founder's time at the ARC, the eviction tracker dashboard and data system is a full stack multipart application for gathering, processing,  managing, and visualizing eviction filing data.  At it's core is an automated backend comprised of custom-built HTML-parsing scripts which gather eviction filing data from public-facing court records search sites, geocode and process the case-level data into a spatially-indexed database collection, and create building-, census tract-, and county-level aggregations which feed the dashboard. Developed in collaboration with the Federal Reserve Bank of Atlanta and Georgia Institute of Technology, the tracker and eviction filing data have been cited and featured by both local and national press, including the Washington Post<sup><a href={links[1]} target='_blank' rel='noreferrer'>1</a>,<a href={links[2]} target='_blank' rel='noreferrer'>2</a></sup>, New York Times<sup><a href={links[4]} target='_blank' rel='noreferrer'>3</a></sup>, WABE, and Atlanta Journal Constitution.</>,
       image: workExampleTwoImage,
       link: 'https://metroatlhousing.org/atlanta-region-eviction-tracker/'
+    },
+    {
+      header: 'Metro Atlanta Housing Strategy',
+      Description: () => <>In the role of Principal Planner at the Atlanta Regional Commission (ARC), our founder developed the 10 submarkets serving as the spatial framework for the Atlanta's 11-county housing strategy. Built using millions of home sale transactions, parcel records, and land use data, the submarkets provide a means to identify housing policies and strategies sutied to the various development and market contexts across the region.  The results of the home sale price and submarket analysis and other housing-related data are made available on an interactive dashboard, also a product of our founder's development efforts.</>,
+      image: workExampleThreeImage,
+      link: 'https://data.metroatlhousing.org/'
     }
 
   ],
