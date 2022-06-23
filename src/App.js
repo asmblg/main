@@ -48,10 +48,10 @@ function App() {
       </div>
       <div id='bio'>
         <p>
-        We are a small, nimble consulting firm specializing in geospatial analytics, research, and full stack application development for public, nonprofit, and advocacy-oriented organizations wishing to turn data into action.
+        We are a small, nimble consulting firm specializing in geospatial analytics, research, data visualization, and full stack application development for public, nonprofit, and advocacy-oriented organizations wishing to turn data into action.
         </p>
         <p>
-        Our mission is to <strong>gather</strong> together people, data, and technology in a way that moves the needle toward greater equity, inclusivity, and transparency in the various decision-making processes that impact our local and global communities.
+        Our mission is to facilitate the <strong>gathering</strong> of people, data, and technology in a way that moves the needle toward greater equity, inclusivity, and transparency in the various decision-making processes that impact our local and global communities.
         </p>
 
       </div>
