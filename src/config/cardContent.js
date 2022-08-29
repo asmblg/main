@@ -4,16 +4,17 @@ const workExampleTwoImage = require('../images/evictiontracker.png');
 const workExampleThreeImage = require('../images/mahs-dataexplorer.png');
 const workExampleTFourImage = require('../images/houseatl.png');
 
-
 const teamMemberOneImage = require('../images/erikprofile.jpg');
-
 
 const links = [
   'https://atlantaregional.org/',
   'https://www.washingtonpost.com/business/2022/01/02/atlanta-apartment-evictions/',
   'https://www.washingtonpost.com/business/2021/09/28/eviction-cliff-moratorium-rental-assistance/',
   'https://www.nytimes.com/2021/10/18/us/eviction-rising-rent-cost.html',
-  'https://neighborhoodnexus.org/'
+  'https://neighborhoodnexus.org/',
+  'https://metroatlhousing.org',
+  'https://cspav.gatech.edu/',
+  'https://www.enterprisecommunity.org/'
 ]
 
 export default {
@@ -54,13 +55,13 @@ export default {
     },
     {
       header: 'Metro Atlanta Housing Strategy',
-      Description: () => <>In the position of Principal Planner at the Atlanta Regional Commission (ARC), our founder developed the 10 submarkets serving as the spatial framework for the Atlanta's 11-county housing strategy. Built using millions of home sale transactions, parcel records, and land use data, the submarkets provide a means to identify housing policies and strategies sutied to the various development and market contexts across the region.  The results of the home sale price and submarket analysis and other housing-related data are made available on an interactive dashboard, also a product of our founder's development efforts.</>,
+      Description: () => <>In the position of Principal Planner at the Atlanta Regional Commission (ARC), our founder developed the 10 submarkets serving as the spatial framework for the <a href={links[5]} target='_blank' rel='noreferrer'>Metro Atlanta Housing Strategy (MAHS)</a>. Built using millions of home sale transactions, parcel records, and land use data, the submarkets provide a means to identify housing policies and strategies sutied to the various development and market contexts across the region.  The results of the home sale price and submarket analysis and other housing-related data are made available on an interactive dashboard, also a product of our founder's development efforts.</>,
       image: workExampleThreeImage,
       link: 'https://data.metroatlhousing.org/'
     },
     {
       header: 'HouseATL Housing Preservation Database',
-      Description: () => <>The result of the combined efforts of Enterprise Community Parnters Southest, Georgia Tech's Center for Spatial Planning, Analytics, and Visualization (CSPAV), and the Atlanta Regional Commission (ARC), the HouseATL Affordable Housing Preservation Database and interactive web platform was built to provide simple access to the current and at-risk inventory of subsidized affordable housing in the City of Atlanta.  As the Research and Application Development Coordinator at the ARC, our founder led development and hosting of the backend system for integrating data from multiple agencies, geocoding and processing it, and then serving it via a custom-built API.  Working with CSPAV, He also managed the UI/UX design and development process to the make revisions and improvements to an already existing mapping and data visualization dashboard.</>,
+      Description: () => <>The result of the combined efforts of <a href={links[7]} target='_blank' rel='noreferrer'>Enterprise Community Parnters Southeast</a>, <a href={links[6]} target='_blank' rel='noreferrer'>Georgia Tech's Center for Spatial Planning, Analytics, and Visualization (CSPAV)</a>, and the <a href={links[0]} target='_blank' rel='noreferrer'>Atlanta Regional Commission (ARC)</a>, the HouseATL Affordable Housing Preservation Database and interactive web platform was built to provide simple access to the current and at-risk inventory of subsidized affordable housing in the City of Atlanta.  As the Research and Application Development Coordinator at the ARC, our founder led development and hosting of the backend system for integrating data from multiple agencies, geocoding and processing it, and then serving it via a custom-built API.  Working with CSPAV, He also managed the UI/UX design and development process to the make revisions and improvements to an already existing mapping and data visualization dashboard.</>,
       image: workExampleTFourImage,
       link: 'https://houseatl-arc-dev.herokuapp.com/#/'
     }

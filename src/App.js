@@ -51,7 +51,7 @@ function App() {
         We are a small, nimble consulting firm specializing in geospatial analytics, research, data visualization, and full stack application development for public, nonprofit, and advocacy-oriented organizations wishing to turn data into action.
         </p>
         <p>
-        Our mission is to facilitate the <strong>gathering</strong> of people, data, and technology in a way that moves the needle toward greater equity, inclusivity, and transparency in the various decision-making processes that impact our local and global communities.
+        Our mission is to facilitate the gathering of people, data, and technology in a way that moves the needle toward greater equity, inclusivity, and transparency in the various decision-making processes that impact our local and global communities.
         </p>
 
       </div>
