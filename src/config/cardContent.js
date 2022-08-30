@@ -22,17 +22,17 @@ export default {
     {
       header: 'Custom-Built Application or Website',
       email: 'custom@asmblg.io',
-      text: `Please let us know little bit about your application/website goals, and we'll set up a time to discuss how we can help.`
+      text: `Please let us know a little bit about your application/website goals, and we'll set up a time to discuss how we might be able to help.`
     },
     {
       header: 'Urban Planning and Geospatial Research',
       email: 'research@asmblg.io',
-      text: `Please let us know little bit about your research goals, and we'll set up a time to discuss how we can help.`
+      text: `Please let us know a little bit about your research goals, and we'll set up a time to discuss how we might be able to help.`
     },
     {
       header: 'Bug Fixes and Application Upgrades',
       email: 'fix@asmblg.io',
-      text: `Please let us know little bit about the issues and/or desired upgrades to your existing application, and we'll set up a time to discuss how we can help.`
+      text: `Please let us know a little bit about the issues and/or desired upgrades to your existing application, and we'll set up a time to discuss how we might be able to help.`
     },
     {
       header: 'Anything Else',
@@ -72,7 +72,7 @@ export default {
       name: 'Erik Woodworth',
       role: 'CEO & Director, Research and Application Development', 
       image: teamMemberOneImage,
-      Description: () => <>Prior to founding this company, Erik was the Research and Application Development Coordinator for the <a href={links[0]} target='_blank' rel='noreferrer'>Atlanta Regional Commission (ARC)</a> and Lead Application Developer for <a href={links[4]} target='_blank' rel='noreferrer'>Neighborhood Nexus</a>.  He holds a Masters in Geography (Research Methods) from University of Durham in England and a Masters in City and Regional Planning from the Georgia Institute of Technology.  He began building full stack web applications in 2018 and has since then overseen the development of a number of widely-used and highly-visible mapping and data visualization tools.  In his role at the ARC, he also oversaw analysis and research in an array of subjects, including housing affordability, gentrification and neighborhood change, public health, and economic polarization.  His housing research, in particular, was foundational in the creation of the Metro Atlanta Housing Strategy which is built on submarket definitions resulting from his analysis of millions of records reflective of home sale activity in the region from 2013 to the present.</>
+      Description: () => <>Prior to founding this company, Erik was the Research and Application Development Coordinator for the <a href={links[0]} target='_blank' rel='noreferrer'>Atlanta Regional Commission (ARC)</a> and Lead Application Developer for <a href={links[4]} target='_blank' rel='noreferrer'>Neighborhood Nexus</a>.  He holds a Masters in Geography (Research Methods) from University of Durham in England and a Masters in City and Regional Planning from the Georgia Institute of Technology.  He began building full stack web applications in 2018 and has since overseen the development of a number of widely-used and highly-visible mapping and data visualization tools.  In his role at the ARC, he also oversaw analysis and research in an array of subjects, including housing affordability, gentrification and neighborhood change, public health, and economic polarization.  His housing research, in particular, was foundational in the creation of the Metro Atlanta Housing Strategy which is built on submarket definitions resulting from the processing and analysis of millions of home sale records in the Atlanta region from 2013 to 2021.</>
 
     }
   ]
