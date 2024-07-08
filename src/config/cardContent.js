@@ -3,6 +3,7 @@ const workExampleOneImage = require( '../images/datanexus.png');
 const workExampleTwoImage = require('../images/evictiontracker.png');
 const workExampleThreeImage = require('../images/mahs-dataexplorer.png');
 const workExampleTFourImage = require('../images/houseatl.png');
+const workExampleFiveImage = require('../images/Bloomberg City Economy.png');
 
 const teamMemberOneImage = require('../images/erikprofile.jpg');
 
@@ -41,6 +42,12 @@ export default {
     }   
   ],
   work: [
+    {
+      header: 'Bloomberg Philanthropies City Economy Dashboard',
+      Description: () => <>Developed as a tool to aid mayors and other city officials involved in economic development decision-making, this web application currently hosts dashboards for Tampa, Phoenix, and Baltimore.  Both the frontend and backend were created with highly-configurable modular architectures, enabling the hosting of dashboards for additional cities as well as alternative designs, layouts, indicators, and visualizations.  Compiling together data from various sources, the information on the hosted dashboards is kept current with a custom-built data socket application for pulling, processing, and publishing data via an array of channels (e.g., SharePoint, API, SFTP, Web Driver, and GoogleDrive) and in various source formats (e.g., JSON, XLSX, CSV, PDF, and HTML).  The maintenance and hosting of the application is on-going with the planned addition of a European version and pilot city toward the end of 2024.</>,
+      image: workExampleFiveImage,
+      link: 'https://cityeconomy.org'
+    },
     {
       header: 'DataNexus',
       Description: () => <>Built from the ground up, this mapping and data visualization platform is the primary product of our founder's development efforts at the <a href={links[0]} target='_blank' rel='noreferrer'>Atlanta Regional Commission (ARC)</a>.  Serving as a conduit for public data on everything from early childhood education to housing, this single-page web application allows users to choose and customize a wide range of geographic layers along with a plethora of associated data, add and join their own data to existing layers, view relationships and patterns using collapsable charts, and export data and images in multiple formats.</>,

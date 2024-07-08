@@ -98,7 +98,7 @@ a {
 
 #view-box {
   position: fixed;
-  height: calc(78vh - 70px);
+  height: calc(80vh - 70px);
   width: 100vw;
   border-radius: 10px 10px 0 0;
   border: solid rgba(134, 134, 134, 0.552) 1px;
@@ -140,7 +140,7 @@ a {
   max-width: 600px;
   margin: 1.5em auto;
   font-weight: 200;
-  font-size: 1.2em;
+  font-size: 1em;
   text-align: justify;
 }
 
@@ -296,7 +296,7 @@ a {
 
 
 
-@media only screen and (max-width: 500px ) {
+@media only screen and (max-width: 800px ) {
   .view-box-team-card,
   .view-box-work-card {
     width: 80vw;
@@ -362,7 +362,7 @@ a {
   }
 
   #view-box {
-    height: 70vh;
+    height: 80vh;
   }
 
 

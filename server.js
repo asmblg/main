@@ -3,14 +3,14 @@ require('dotenv').config();
 
 const express = require('express');
 const path = require('path');
-const mongoose = require('mongoose');
+// const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 
 const PORT = process.env.PORT || 8080;
 
 
 const app = express();
-const routes = require('./routes');
+// const routes = require('./routes');
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 // app.use(routes);
@@ -24,20 +24,20 @@ app.get('/', function(req,res) {
   res.sendFile(path.join(__dirname+'/build/index.html'));
 });
 
-app.use(routes);
+// app.use(routes);
 
-const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost/MAHS-DATA-EXPLORER';
+// const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost/MAHS-DATA-EXPLORER';
 // console.log(MONGODB_URI);
 
 // Connect to the Mongo DB
-mongoose
-  .connect(MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true })
-  .then(() => {
-    console.log('DB Connected:', MONGODB_URI ? 'production' : 'dev');
-  })
-  .catch(err => {
-    console.log('DB Connection ERROR: ', err);
-  });
+// mongoose
+//   .connect(MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true })
+//   .then(() => {
+//     console.log('DB Connected:', MONGODB_URI ? 'production' : 'dev');
+//   })
+//   .catch(err => {
+//     console.log('DB Connection ERROR: ', err);
+//   });
 
 
 // Start the app by listening on the default Heroku port

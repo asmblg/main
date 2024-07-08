@@ -5,7 +5,7 @@ export default ({cardContent}) =>
       Our Team
     </div>
     <div className='view-box-description'>
-      Founded in 2022, we are a small research and application development shop located in the Rogers Park neighborhood of Chicago.
+      Founded in 2022, we are a small research and application development shop located in Evanston, Illinois.
     </div>
     <div className='view-box-content'>
     { cardContent
