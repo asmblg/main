@@ -1,13 +1,14 @@
 /* eslint-disable import/no-anonymous-default-export */
 export default ({cardContent}) => 
   <>
+
+    <div className='view-box-content'>
     <div className='view-box-header'>
       Our Team
     </div>
     <div className='view-box-description'>
       Founded in 2022, we are a small research and application development shop located in Evanston, Illinois.
     </div>
-    <div className='view-box-content'>
     { cardContent
         ? cardContent.map(({name, Description, image, role}, i) =>
 

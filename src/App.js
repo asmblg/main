@@ -36,7 +36,10 @@ function App() {
   }
   
   return (
-    <div className="App">
+    <div 
+      className="App"
+
+    >
       <div 
         id="header"             
         onClick={() => setView({
@@ -70,10 +73,18 @@ function App() {
 
         }
       </div>
-      <div id='view-box' className={ view.selection ? view.open ? 'view-box-open' : 'view-box-close' : ''}>
+
+      <div 
+        id='view-box' 
+        className={ view.selection ? view.open ? 'view-box-open' : 'view-box-close' : ''}
+        style={{
+          backgroundOpacity: 0.1,
+          backgroundImage: `url(${require('./images/contour-bg.jpg')})`,
+        }}
+      >
         <div className='view-box-control-bar'>
           <FaChevronCircleDown
-            size='2em'
+            size='2.5em'
             // className='view-box-close-button'
             onClick={() => setView({
               ...view,
@@ -84,7 +95,11 @@ function App() {
         <View selection={view.selection} />
         {/* // {renderView(view.selection)} */}
       </div>
-
+      <div id='footer'>
+        <p>
+          &copy; 2024 Assemblage Consulting LLC
+        </p>
+      </div>
 
     </div>
   );
