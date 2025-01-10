@@ -49,7 +49,7 @@ function App() {
       >
         <img src={logo} id={"App-logo"} className={view.open ? 'shifted-up': 'shifted-down'} alt="logo" />
       </div>
-      <div id='bio'>
+      <div id='bio' className={view.open ? 'disappear' : ''}>
         <p>
         We are a small, nimble consulting firm specializing in geospatial analytics, research, data visualization, and full stack application development for public, nonprofit, and advocacy-oriented organizations wishing to turn data into action.
         </p>
@@ -78,7 +78,7 @@ function App() {
         id='view-box' 
         className={ view.selection ? view.open ? 'view-box-open' : 'view-box-close' : ''}
         style={{
-          backgroundOpacity: 0.1,
+          // backgroundOpacity: '0.',
           backgroundImage: `url(${require('./images/contour-bg.jpg')})`,
         }}
       >

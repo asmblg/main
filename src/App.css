@@ -89,6 +89,11 @@ a {
   font-weight: 200;
 }
 
+.disappear {
+  opacity: 0;
+  transition: opacity 1s ease-out;
+}
+
 #menu {
   width: 400px;
   display: flex;
@@ -184,7 +189,7 @@ a {
 
   flex-direction: column;
   width: 90vw;
-  padding: 100px 5vw 10px 5vw;
+  padding: 100px 5vw 160px 5vw;
   overflow: auto;
   align-items: center;
   gap: 40px;
@@ -391,7 +396,7 @@ a {
   }
 
   .view-box-content {
-    padding: 100px 5vw 10px 5vw;
+    padding: 100px 5vw 160px 5vw;
     margin-top: 0px;
   }
 
