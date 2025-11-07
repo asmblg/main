@@ -45,7 +45,7 @@ export default {
   ],
   work: [
         {
-      header: 'Bloomberg Philanthropies City Economy Dashboard - Lisbon',
+      header: `Bloomberg Associate's City Economy Dashboard - Lisbon`,
       Description: () => <>Building off the success of the US version, this web application is tailored for Lisbon and supports dashboards with modular, configurable architectures. The system integrates diverse data sources using custom-built pipelines and maintains up-to-date information through automated processes. Assemblage Consulting manages ongoing development and maintenance of this platform.</>,
       image: workExampleSixImage,
       link: 'https://www.lisboa.pt/temas/economia/dados-economicos/indicadores-principais'
@@ -57,7 +57,7 @@ export default {
       link: 'https://upperwestsideatl.org/parking/'
     },
     {
-      header: 'Bloomberg Philanthropies City Economy Dashboard - US',
+      header: `Bloomberg Associate's City Economy Dashboard - US`,
       Description: () => <>Developed to aid mayors and city officials in economic development, this web application supports dashboards for multiple cities with modular, configurable architectures. The system integrates diverse data sources using custom-built pipelines and maintains up-to-date information through automated processes. Assemblage Consulting manages ongoing development and maintenance of this platform.</>,
       image: workExampleFiveImage,
       link: 'https://cityeconomy.org'
