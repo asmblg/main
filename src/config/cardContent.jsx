@@ -1,11 +1,13 @@
 /* eslint-disable import/no-anonymous-default-export */
-const workExampleOneImage = require('../images/datanexus.png');
-const workExampleTwoImage = require('../images/evictiontracker.png');
-const workExampleThreeImage = require('../images/mahs-dataexplorer.png');
-const workExampleFourImage = require('../images/houseatl-new.png');
-const workExampleFiveImage = require('../images/Bloomberg City Economy.png');
+import workExampleOneImage from '../images/datanexus.png';
+import workExampleTwoImage from '../images/evictiontracker.png';
+import workExampleThreeImage from '../images/mahs-dataexplorer.png';
+import workExampleFourImage from '../images/houseatl-new.png';
+import workExampleFiveImage from '../images/Bloomberg City Economy.png';
+import workExampleSixImage from '../images/CityEconomy-LISBOA.png';
+import workExampleSevenImage from '../images/UW-ParkingMap.png';
 
-const teamMemberOneImage = require('../images/erikprofile.jpg');
+import teamMemberOneImage from '../images/erikprofile.png';
 
 // const links = [
 //   'https://atlantaregional.org/',
@@ -42,8 +44,20 @@ export default {
     }   
   ],
   work: [
+        {
+      header: 'Bloomberg Philanthropies City Economy Dashboard - Lisbon',
+      Description: () => <>Building off the success of the US version, this web application is tailored for Lisbon and supports dashboards with modular, configurable architectures. The system integrates diverse data sources using custom-built pipelines and maintains up-to-date information through automated processes. Assemblage Consulting manages ongoing development and maintenance of this platform.</>,
+      image: workExampleSixImage,
+      link: 'https://www.lisboa.pt/temas/economia/dados-economicos/indicadores-principais'
+    },
     {
-      header: 'Bloomberg Philanthropies City Economy Dashboard',
+      header: `Atlanta's Upper Westside Parking Map`,
+      Description: () => <>A web application designed to help users find available parking in Atlanta's Upper Westside neighborhood. The platform allows data managed using Google Sheets and provides user-friendly maps and integration with local businesses to promote nearby amenities.</>,
+      image: workExampleSevenImage,
+      link: 'https://upperwestsideatl.org/parking/'
+    },
+    {
+      header: 'Bloomberg Philanthropies City Economy Dashboard - US',
       Description: () => <>Developed to aid mayors and city officials in economic development, this web application supports dashboards for multiple cities with modular, configurable architectures. The system integrates diverse data sources using custom-built pipelines and maintains up-to-date information through automated processes. Assemblage Consulting manages ongoing development and maintenance of this platform.</>,
       image: workExampleFiveImage,
       link: 'https://cityeconomy.org'

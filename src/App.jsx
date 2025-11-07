@@ -1,15 +1,16 @@
 // import logo from './logo.svg';
 import React, {useState} from 'react';
-import OurTeam from './components/OurTeam';
-import OurWork from './components/OurWork';
-import Connect from './components/Connect';
-import cardContent from './config/cardContent';
+import OurTeam from './components/OurTeam.jsx';
+import OurWork from './components/OurWork.jsx';
+import Connect from './components/Connect.jsx';
+import cardContent from './config/cardContent.jsx';
 import { FaChevronCircleDown } from 'react-icons/fa';
 // import content from './content';
 
 import './App.css';
-const logo = require('./images/Assemblage Logo 3.png');
-// const darkLogo = require('./images/Assemblage Logo Dark Mode.png');
+import logo from './images/Assemblage Logo 3.png';
+import contourBg from './images/contour-bg.jpg';
+// import darkLogo from './images/Assemblage Logo Dark Mode.png';
 
 function App() {
   const [ view , setView ] = useState({
@@ -79,7 +80,7 @@ function App() {
         className={ view.selection ? view.open ? 'view-box-open' : 'view-box-close' : ''}
         style={{
           // backgroundOpacity: '0.',
-          backgroundImage: `url(${require('./images/contour-bg.jpg')})`,
+          backgroundImage: `url(${contourBg})`,
         }}
       >
         <div className='view-box-control-bar'>
@@ -97,7 +98,7 @@ function App() {
       </div>
       <div id='footer'>
         <p>
-          &copy; 2024 Assemblage Consulting LLC
+          &copy; 2025 Assemblage Consulting LLC
         </p>
       </div>
 
