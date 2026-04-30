@@ -11,7 +11,7 @@ export default ({cardContent}) =>
     </div>
       { cardContent
         ? cardContent.map(({header, email, text}) =>
-            <div className='view-box-content-card'>
+            <article className='view-box-content-card' key={email}>
               <div className='view-box-content-card-header'>
                 {header}
               </div>
@@ -22,7 +22,7 @@ export default ({cardContent}) =>
                 <a href={`mailto:${email}`}>{email}</a>
               </div>
           
-          </div>
+          </article>
           )
         : null}
     </div>
