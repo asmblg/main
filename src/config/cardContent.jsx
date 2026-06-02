@@ -47,6 +47,18 @@ export default {
   ],
   work: [
         {
+      header: 'Atlanta PAD Community Response and Diversions Dashboard',
+      Description: () => <>An interactive data dashboard built for the Policing Alternatives & Diversion (PAD) Initiative, sharing key metrics for PAD's community response services, diversion services, and 911 calls for service in the City of Atlanta. The platform provides insight into how people struggling with mental health, substance use, or extreme poverty can be supported by alternative response. Assemblage Consulting developed and maintains this custom-built application.</>,
+      image: workExampleEightImage,
+      link: 'https://dashboard.atlantapad.org'
+    },
+    {
+      header: 'Bratislava Economic Dashboard',
+      Description: () => <>A comprehensive economic dashboard for the City of Bratislava presenting key economic indicators and data visualisations covering the city's economic performance, labour market, business activity, innovation, real estate, and tourism trends. Built with a modular, configurable architecture, the platform integrates multiple municipal and national data sources. Assemblage Consulting supports the ongoing development and maintenance of this platform in partnership with the City of Bratislava.</>,
+      image: workExampleNineImage,
+      link: 'https://bratislava.sk/en/city-of-bratislava/economic-growth-and-innovation/economy-strategy-and-vision/bratislava-economic-dashboard#city-overview'
+    },
+        {
       header: `Bloomberg Associate's City Economy Dashboard - Lisbon`,
       Description: () => <>Building off the success of the US version, this web application is tailored for Lisbon and supports dashboards with modular, configurable architectures. The system integrates diverse data sources using custom-built pipelines and maintains up-to-date information through automated processes. Assemblage Consulting manages ongoing development and maintenance of this platform.</>,
       image: workExampleSixImage,
@@ -63,18 +75,6 @@ export default {
       Description: () => <>Developed to aid mayors and city officials in economic development, this web application supports dashboards for multiple cities with modular, configurable architectures. The system integrates diverse data sources using custom-built pipelines and maintains up-to-date information through automated processes. Assemblage Consulting manages ongoing development and maintenance of this platform.</>,
       image: workExampleFiveImage,
       link: 'https://cityeconomy.org'
-    },
-    {
-      header: 'Atlanta PAD Community Response and Diversions Dashboard',
-      Description: () => <>An interactive data dashboard built for the Policing Alternatives & Diversion (PAD) Initiative, sharing key metrics for PAD's community response services, diversion services, and 911 calls for service in the City of Atlanta. The platform provides insight into how people struggling with mental health, substance use, or extreme poverty can be supported by alternative response. Assemblage Consulting developed and maintains this custom-built application.</>,
-      image: workExampleEightImage,
-      link: 'https://dashboard.atlantapad.org'
-    },
-    {
-      header: 'Bratislava Economic Dashboard',
-      Description: () => <>A comprehensive economic dashboard for the City of Bratislava presenting key economic indicators and data visualisations covering the city's economic performance, labour market, business activity, innovation, real estate, and tourism trends. Built with a modular, configurable architecture, the platform integrates multiple municipal and national data sources. Assemblage Consulting supports the ongoing development and maintenance of this platform in partnership with the City of Bratislava.</>,
-      image: workExampleNineImage,
-      link: 'https://bratislava.sk/en/city-of-bratislava/economic-growth-and-innovation/economy-strategy-and-vision/bratislava-economic-dashboard#city-overview'
     },
     {
       header: 'DataNexus',
