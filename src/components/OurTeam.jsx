@@ -10,9 +10,9 @@ export default ({cardContent}) =>
       Founded in 2022, we are a small research and application development shop located in Evanston, Illinois.
     </div>
     { cardContent
-        ? cardContent.map(({name, Description, image, role}, i) =>
+        ? cardContent.map(({name, Description, image, role}) =>
 
-           <div className='view-box-team-card'>
+           <article className='view-box-team-card' key={name}>
               <div className='view-box-team-card-image'>
                 <img 
                   src={image} 
@@ -32,7 +32,7 @@ export default ({cardContent}) =>
                 </div>
               </div>
           
-          </div>
+          </article>
         )
         : null}
       

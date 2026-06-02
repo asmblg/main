@@ -11,7 +11,7 @@ export default ({cardContent}) =>
     { cardContent
         ? cardContent.map(({header, Description, image, link}) =>
 
-           <div className='view-box-work-card'>
+           <article className='view-box-work-card' key={header}>
 
               <div className='view-box-work-card-body'>
                 <div className='view-box-work-card-image'>
@@ -31,7 +31,7 @@ export default ({cardContent}) =>
                 </div>
               </div>
           
-          </div>
+          </article>
         )
         : null}
       
