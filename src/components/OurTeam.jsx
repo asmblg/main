@@ -7,7 +7,7 @@ export default ({cardContent}) =>
       Our Team
     </div>
     <div className='view-box-description'>
-      Founded in 2022, we are a small research and application development shop located in Evanston, Illinois.
+      Founded in 2022, we are a small research and application development shop based in Chicago, Illinois with clients and partners in the US, Mexico, and Europe.
     </div>
     { cardContent
         ? cardContent.map(({name, Description, image, role}) =>
