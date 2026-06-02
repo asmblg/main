@@ -114,8 +114,8 @@ function App() {
           <div className="section-header compact">
             <h2>Our Team</h2>
             <p>
-              Founded in 2022, we are a small research and application development shop located in
-              Evanston, Illinois.
+              Founded in 2022, we are a small research and application development shop based in
+              Chicago, Illinoi with clients and partners in the US, Mexico, and Europe.
             </p>
           </div>
 
