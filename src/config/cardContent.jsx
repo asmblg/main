@@ -6,6 +6,8 @@ import workExampleFourImage from '../images/houseatl-new.png';
 import workExampleFiveImage from '../images/Bloomberg City Economy.png';
 import workExampleSixImage from '../images/CityEconomy-LISBOA.png';
 import workExampleSevenImage from '../images/UW-ParkingMap.png';
+import workExampleEightImage from '../images/atlantapad-dashboard.png';
+import workExampleNineImage from '../images/bratislava-economic-dashboard.png';
 
 import teamMemberOneImage from '../images/erikprofile.png';
 
@@ -63,6 +65,18 @@ export default {
       link: 'https://cityeconomy.org'
     },
     {
+      header: 'Atlanta PAD Community Response and Diversions Dashboard',
+      Description: () => <>An interactive data dashboard built for the Policing Alternatives & Diversion (PAD) Initiative, sharing key metrics for PAD's community response services, diversion services, and 911 calls for service in the City of Atlanta. The platform provides insight into how people struggling with mental health, substance use, or extreme poverty can be supported by alternative response. Assemblage Consulting developed and maintains this custom-built application.</>,
+      image: workExampleEightImage,
+      link: 'https://dashboard.atlantapad.org'
+    },
+    {
+      header: 'Bratislava Economic Dashboard',
+      Description: () => <>A comprehensive economic dashboard for the City of Bratislava presenting key economic indicators and data visualisations covering the city's economic performance, labour market, business activity, innovation, real estate, and tourism trends. Built with a modular, configurable architecture, the platform integrates multiple municipal and national data sources. Assemblage Consulting supports the ongoing development and maintenance of this platform in partnership with the City of Bratislava.</>,
+      image: workExampleNineImage,
+      link: 'https://bratislava.sk/en/city-of-bratislava/economic-growth-and-innovation/economy-strategy-and-vision/bratislava-economic-dashboard#city-overview'
+    },
+    {
       header: 'DataNexus',
       Description: () => <>A mapping and data visualization platform enabling users to access, analyze, and export public data along with customized maps and other data visualizations. DataNexus includes an admin console for authenticated users to create custom map projects, add new layers, and integrate new datasets. Assemblage Consulting continues to oversee its development to meet evolving user needs.</>,
       image: workExampleOneImage,
@@ -70,13 +84,13 @@ export default {
     },
     {
       header: 'HouseATL Housing Preservation Database and Dashboard',
-      Description: () => <>A collaborative platform for monitoring the Atlanta Regions’s existing and recently-expired subsidized housing inventory. Assemblage Consulting supports its frontend and backend development, data integration, and user interface updates to streamline access to critical housing information.</>,
+      Description: () => <>A collaborative platform for monitoring the Atlanta Regions's existing and recently-expired subsidized housing inventory. Assemblage Consulting supports its frontend and backend development, data integration, and user interface updates to streamline access to critical housing information.</>,
       image: workExampleFourImage,
       link: 'https://houseatl-dev-dfbf38d30113.herokuapp.com/'
     },
     {
       header: 'Atlanta Region Eviction Tracker',
-      Description: () => <>A comprehensive system for tracking eviction filings through automated data collection, geocoding, and visualization. Assemblage Consulting manages the system’s upgrades and enhancements to support policymakers and stakeholders in addressing housing challenges.</>,
+      Description: () => <>A comprehensive system for tracking eviction filings through automated data collection, geocoding, and visualization. Assemblage Consulting manages the system's upgrades and enhancements to support policymakers and stakeholders in addressing housing challenges.</>,
       image: workExampleTwoImage,
       link: 'https://metroatlhousing.org/atlanta-region-eviction-tracker/'
     },
@@ -110,6 +124,23 @@ export default {
       name: 'Enterprise Community Partners',
       description: 'Worked on the HouseATL Housing Preservation Database to monitor affordable housing in Atlanta.',
       link: 'https://www.enterprisecommunity.org/'
+    },
+    {
+      name: 'Policing Alternatives & Diversion Initiative (Atlanta PAD)',
+      description: 'Built the Atlanta PAD Community Response and Diversions Dashboard to track community response services, diversion outcomes, and participant support data across the City of Atlanta.',
+      link: 'https://www.atlantapad.org'
+    }
+  ],
+  partners: [
+    {
+      name: 'City of Bratislava',
+      description: 'Partnered with Bratislava, the capital city of Slovakia, to develop and maintain the Bratislava Economic Dashboard — a platform presenting key economic indicators covering labour markets, business activity, innovation, real estate, and tourism trends.',
+      link: 'https://bratislava.sk'
+    },
+    {
+      name: 'The Carter Center',
+      description: 'Partnered with The Carter Center, a nonprofit founded in 1982 dedicated to advancing peace, democracy, and health worldwide. The Carter Center works across more than 80 countries to resolve conflicts, conduct election observation, and combat preventable diseases.',
+      link: 'https://www.cartercenter.org'
     }
   ]
 };
