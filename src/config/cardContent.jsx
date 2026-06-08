@@ -9,7 +9,7 @@ import workExampleSevenImage from '../images/UW-ParkingMap.png';
 import workExampleEightImage from '../images/atlantapad-dashboard.png';
 import workExampleNineImage from '../images/bratislava-economic-dashboard.png';
 
-import teamMemberOneImage from '../images/erikprofile.png';
+import teamMemberOneImage from '../images/erikprofile.jpg';
 
 // const links = [
 //   'https://atlantaregional.org/',
